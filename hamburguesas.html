@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu_Hamburguesas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <img src="inconos/logonegocio2.jpg" alt="logo de Pavel Pizzas" class="logo" loading="lazy">
+        </div>
+        <div class="brand-text">
+          <div class="tag">
+            <h1>Pavel Pizzas <br><small>the restaurant</small> </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- navegacion principal -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul>
+          <li class="has-sub">
+            <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Menú ▾</button>
+            <ul class="sub-menu" role="menu">
+              <li><a href="#menu" data-cat="todas">Todas</a></li>
+              <li><a href="#menu" data-cat="pizzas">Pizzas</a></li>
+              <li><a href="#menu" data-cat="hamburguesas">Hamburguesas</a></li>
+              <li><a href="#menu" data-cat="empanadas">Empanadas</a></li>
+              <li><a href="#menu" data-cat="tequenos">Tequeños</a></li>
+              <li><a href="#menu" data-cat="Pastas">Pastas</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Ofertas ▾</button>
+            <ul class="sub-menu" role="menu">
+              <li><a href="#menu" data-filter="combo">Combos</a></li>
+              <li><a href="#menu" data-filter="promo">Promociones</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#registro">Registro</a></li>
+          <li><a href="#pago">Pago</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <input id="searchInput" class="search" type="search" placeholder="Buscar platos, ingredientes..."
+          aria-label="Buscar en el menú">
+        <button id="hamburger" class="hamburger" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2> MODULO PASTAS </h2>
+      </div>
+    </section>
+
+    <!-- Grilla de productos -->
+    <section id="menu" class="menu-grid" aria-labelledby="menu">
+      <!-- Cards con data-cat y data-keywords para buscador -->
+      <article class="card" data-cat="hamburguesas" data-keywords="hamburguesa simple">
+        <img src="imagenes/hamburguesa2.jpg" width="12%" height="12" alt="Hamburguesa simple" loading="lazy">
+        <div class="card-body">
+          <h3>Hamburguesa simple</h3>
+          <p class="desc">Carne, queso, lechuga, tomate y salsa especial.</p>
+          <div class="card-row">
+            <div class="price">$12000</div>
+            <button class="btn order" data-name="Hamburguesa simple" data-price="12000">Pedir</button>
+            <button class="btn order" onclick="location.href='index.html'">menu principal</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="hamburguesas" data-keywords="hamburguesa doble queso lechuga tomate">
+        <img src="imagenes/hamburguesa1.jpg" width="12%" height="12" alt="Hamburguesa doble" loading="lazy">
+        <div class="card-body">
+          <h3>Hamburguesa Doble</h3>
+          <p class="desc">Carne, queso, lechuga, tomate y salsa especial.</p>
+          <div class="card-row">
+            <div class="price">$4500</div>
+            <button class="btn order" data-name="Hamburguesa Doble" data-price="4500">Pedir</button>
+            <button class="btn order" onclick="location.href='index.html'">menu principal</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="papas fritas" data-keywords="papas fritas guarnición">
+        <img src="imagenes/papas_fritas.jpg" width="1%" alt="Papas Fritas" loading="lazy">
+        <div class="card-body">
+          <h3>Papas fritas</h3>
+          <p class="desc">Rellenas con carne, cebolla y especias.</p>
+          <div class="card-row">
+            <div class="price">$1500 c/u</div>
+            <button class="btn order" data-name="Papas fritas" data-price="150">Pedir</button>
+            <button class="btn order" onclick="location.href='index.html'">menu principal</button>
+            </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="gaseosas" data-keywords="gaseosa refresco">
+        <img src="imagenes/gaseosa.jpg" alt="Gaseosa" loading="lazy">
+        <div class="card-body">
+          <h3>Gaseosa</h3>
+          <p class="desc">Refresco de cola, limonada o naranja.</p>
+          <div class="card-row">
+            <div class="price">$4500</div>
+            <button class="btn order" data-name="Gaseosa" data-price="4500">Pedir</button>
+            <button class="btn order" onclick="location.href='index.html'">menu principal</button>
+            </div>
+        </div>
+      </article>
+    </section>
+
+  
+
+    <!-- Pago -->
+    <section id="pago" class="form-section">
+      <h2>Pago en Línea</h2>
+        <form id="paymentForm" class="form" novalidate>
+        
+        <fildeset>
+          <legend>formulario de Pago</legend>
+            
+            <label for="p-name">Nombre en la tarjeta
+              <input id="p-name" type="text" required></label>
+            <label for="p-card">Número de tarjeta
+              <input id="p-card" type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" required></label>
+            <div class="row">
+              <div class="col">
+                <label for="p-exp">Vencimiento
+                <input id="p-exp" type="month" required></label>
+              </div>
+              <div class="col small">
+                  <label for="p-cvv">CVV
+                  <input id="p-cvv" type="text" maxlength="4" required></label>
+              </div>
+            </div>
+            <label for="p-amount">Importe
+            <input id="p-amount" type="text" readonly value="$0"></label>
+            <div class="form-actions">
+              <button type="submit" class="btn">Pagar</button>
+            </div>
+            <div id="paymentMsg" class="msg" aria-live="polite"></div>
+            </fildeset>
+      </form>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer_contenedor">
+      <ul class="social-links">
+        <li class="menu_elem"><a href="https://facebook.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="iconos/facebook_128x128-32_22276 (2).ico" width="50px" alt></a></li>
+        <li class="menu_elem"><a href="https://tiktok.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="iconos/tiktok_logo_icon_181737.ico" width="50px" alt="TikTok"></a></li>
+        <li class="menu_elem"><a href="https://instagram.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="iconos/instagram_ig_logo_icon_181651.ico" width="50px" alt="Instagram"></a></li>
+        <li class="menu_elem"><a href="https://whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="iconos/whatsapp_logo_icon_257020.ico" width="50px" alt="WhatsApp"></a></li>
+        <li class="menu_elem"><a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"><img class="icon"
+              src="iconos/Youtube_36365.ico" width="55px" alt="YouTube"></a></li>
+      </ul>
+    </div>
+
+    <p class="texto_footer">&copy; 2026 Pavel Pizzas. Todos los derechos
+      reservados.</p>
+
+
+    <!-- Modal pedido -->
+    <div id="orderModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-panel">
+        <h3 id="orderTitle">Tu pedido</h3>
+        <div id="orderBody" class="muted"></div>
+        <div class="modal-actions">
+          <button class="btn alt" id="closeModal">Cerrar</button>
+          <button class="btn" id="toPay">Ir a pagar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
