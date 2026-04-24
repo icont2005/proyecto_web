@@ -1,274 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pavel_pizzas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="css/styles2.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavel_pizzas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles2.css">
+  </head>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <img src="inconos/logonegocio2.jpg" alt="logo de Pavel Pizzas" class="logo" loading="lazy">
-        </div>
-        <div class="brand-text">
-          <div class="tag">
-            <h1>Pavel Pizzas <br><small>the restaurant</small> </h1>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <img src="inconos/logonegocio2.jpg" width="123" height="123" alt="logo de Pavel Pizzas" class="logo" loading="lazy">
           </div>
+          <div class="brand-text">
+            <div class="tag">
+              <h1>Pavel Pizzas <br><small>the restaurant</small> </h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- navegacion principal -->
+        <nav class="nav-desktop" aria-label="Navegación principal">
+          <ul>
+            <li class="has-sub">
+              <button class="nav-btn" aria-haspopup="true"
+                aria-expanded="false">Menú ▾</button>
+              <ul class="sub-menu" role="menu">
+                <li><a href="pizzas.html" data-cat="pizzas">Pizzas</a></li>
+                <li><a href="hamburguesas.html" data-cat="hamburguesas">Hamburguesas</a></li>
+                <li><a href="empanadas.html" data-cat="empanadas">Empanadas</a></li>
+                <li><a href="tequenos.html" data-cat="tequenos">Tequeños</a></li>
+                <li><a href="milanesas.html" data-cat="milanesas">Milanesas</a></li>
+                <li><a href="pastas.html" data-cat="Pastas">Pastas</a></li>
+                <li><a href="catering.html" data-cat="Catering">Catering</a></li>
+              </ul>
+            </li>
+
+            <li class="has-sub">
+              <button class="nav-btn" aria-haspopup="true"
+                aria-expanded="false">Ofertas ▾</button>
+              <ul class="sub-menu" role="menu">
+                <li><a href="#menu" data-filter="combo">Combos</a></li>
+                <li><a href="#menu" data-filter="promo">Promociones</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#pago">Pago</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#catering">Catering</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <input id="searchInput" class="search" type="search" 
+            placeholder="Buscar platos, ingredientes..."
+            aria-label="Buscar en el menú">
+          <button id="hamburger" class="hamburger"
+            aria-label="Abrir menú">☰</button>
         </div>
       </div>
+    </header>
 
-      <!-- navegacion principal -->
-      <nav class="nav-desktop" aria-label="Navegación principal">
-        <ul>
-          <li class="has-sub">
-            <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Menú ▾</button>
-            <ul class="sub-menu" role="menu">
-              <li><a href="#menu" data-cat="todas">Todas</a></li>
-              <li><a href="#menu" data-cat="pizzas">Pizzas</a></li>
-              <li><a href="#menu" data-cat="hamburguesas">Hamburguesas</a></li>
-              <li><a href="#menu" data-cat="empanadas">Empanadas</a></li>
-              <li><a href="#menu" data-cat="tequenos">Tequeños</a></li>
-              <li><a href="#menu" data-cat="Pastas">Pastas</a></li>
-            </ul>
-          </li>
-
-          <li class="has-sub">
-            <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Ofertas ▾</button>
-            <ul class="sub-menu" role="menu">
-              <li><a href="#menu" data-filter="combo">Combos</a></li>
-              <li><a href="#menu" data-filter="promo">Promociones</a></li>
-            </ul>
-          </li>
-
-              <li><a href="#registro">Registro</a></li>
-              <li><a href="#pago">Pago</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-              <li><a href="#catering">Catering</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-actions">
-        <input id="searchInput" class="search" type="search" placeholder="Buscar platos, ingredientes..."
-          aria-label="Buscar en el menú">
-        <button id="hamburger" class="hamburger" aria-label="Abrir menú">☰</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-text">
-        <p> Pizzas • Hamburguesas • Empanadas •
-          Tequeños • pastas • Servicio de catering</p>
-      </div>
-    </section>
-
-    <!-- Categorías rápidas -->
-    <section class="categories" aria-label="Categorías">
-      <button class="cat active" data-cat="todas">Todas</button>
-      <button class="cat" data-cat="pizzas">Pizzas</button>
-      <button class="cat" data-cat="hamburguesas">Hamburguesas</button>
-      <button class="cat" data-cat="empanadas">Empanadas</button>
-      <button class="cat" data-cat="tequenos">Tequeños</button>
-      <button class="cat" data-cat="milanesas">Milanesas</button>
-      <button class="cat" data-cat="pastas">Pastas</button>
-    </section>
-
-    <!-- Grilla de productos -->
-    <section id="menu" class="menu-grid" aria-labelledby="menu">
-      <!-- Cards con data-cat y data-keywords para buscador -->
-      <article class="card" data-cat="pizzas" data-keywords="pizza clásica tomate mozzarella orégano">
-        <img src="imagenes/pizza2.jpg" width="3px" height="14px" alt="Pizza clásica" loading="lazy">
-        <div class="card-body">
-          <h3>Pizza Clásica</h3>
-          <p class="desc">Salsa de tomate, mozzarella y orégano.</p>
-          <div class="card-row">
-            <div class="price">desde $12000</div>
-            <button class="btn order" onclick="location.href='pizzas.html'">Ir a pizzas</button>
-          </div>
-        </div>      </article>
-
-      <article class="card" data-cat="hamburguesas" data-keywords="hamburguesa doble queso lechuga tomate">
-        <img src="imagenes/hamburguesa1.jpg" width="12%" height="12" alt="Hamburguesa doble" loading="lazy">
-        <div class="card-body">
-          <h3>Hamburguesa Doble</h3>
-          <p class="desc">Carne, queso, lechuga, tomate y salsa especial.</p>
-          <div class="card-row">
-            <div class="price">desde $4500</div>
-            <button class="btn order" onclick="location.href='hamburguesas.html'">Ir a hamburguesas</button>
-          </div>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <p>
+            "Sabores que conquistan, momentos que se comparten. desde los ingredientes más frescos, hasta la experiencia culinaria perfecta"</p>
         </div>
-      </article>
+      </section>
 
-      <article class="card" data-cat="empanadas" data-keywords="empanadas carne cebolla especias">
-        <img src="imagenes/empanadas.jpg" width="1%" alt="Empanadas" loading="lazy">
-        <div class="card-body">
-          <h3>Empanadas de Carne</h3>
-          <p class="desc">Rellenas con carne, cebolla y especias.</p>
-          <div class="card-row">
-            <div class="price">desde $1500 c/u</div>
-            
-            <button class="btn order" onclick="location.href='empanadas.html'">Ir a empanadas</button>
+      <!-- Categorías rápidas -->
+      <section class="categories" aria-label="Categorías">
+        <button class="cat active" class="btn order"
+          onclick="location.href='pizzas.html'">Pizzas</button>
+        <button class="cat active" class="btn order"
+          onclick="location.href='hamburguesas.html'">Hamburguesas</button>
+        <button class="cat active" class="btn order"
+          onclick="location.href='empanadas.html'">Empanadas</button>
+        <button class="cat active" class="btn order"
+          onclick="location.href='tequenos.html'">Tequeños</button>
+        <button class="cat active" class="btn order"
+          onclick="location.href='milanesas.html'">Milanesas</button>
+        <button class="cat active" class="btn order"
+          onclick="location.href='pastas.html'">Pastas</button>
+        <button class="cat active" class="btn order"
+          onclick="location.href='catering.html'">Catering</button>
+      </section>
+
+      <!-- Grilla de productos -->
+      <section id="menu" class="menu-grid" aria-labelledby="menu">
+        <!-- Cards con data-cat y data-keywords para buscador -->
+        <article class="card" data-cat="pizzas"
+          data-keywords="pizza clásica tomate mozzarella orégano">
+          <img src="imagenes/pizza2.jpg" width="3px" height="14px"
+            alt="Pizza clásica" loading="lazy">
+          <div class="card-body">
+            <h3>Pizza Clásica</h3>
+            <p class="desc">Salsa de tomate, mozzarella y orégano.</p>
+            <div class="card-row">
+              <div class="price">desde $12000</div>
+              <button class="btn order" onclick="location.href='pizzas.html'">Ir
+                a pizzas</button>
+            </div>
           </div>
-        </div>
-      </article>
-
-      <article class="card" data-cat="tequenos" data-keywords="tequeños palitos queso fritos">
-        <img src="imagenes/tequeno2.jpg" alt="Tequeños" loading="lazy">
-        <div class="card-body">
-          <h3>Tequeños</h3>
-          <p class="desc">Palitos de queso fritos, crujientes.</p>
-          <div class="card-row">
-            <div class="price">desde $4500</div>
-            
-            <button class="btn order" onclick="location.href='tequenos.html'">Ir a tequeños</button>
+        </article>
+        <article class="card" data-cat="hamburguesas"
+          data-keywords="hamburguesa doble queso lechuga tomate">
+          <img src="imagenes/hamburguesa1.jpg" width="12%" height="12"
+            alt="Hamburguesa doble" loading="lazy">
+          <div class="card-body">
+            <h3>Hamburguesa Doble</h3>
+            <p class="desc">Carne, queso, lechuga, tomate y salsa especial.</p>
+            <div class="card-row">
+              <div class="price">desde $4500</div>
+              <button class="btn order"
+                onclick="location.href='hamburguesas.html'">Ir a
+                hamburguesas</button>
+            </div>
           </div>
-        </div>
-      </article>
-
-      <article class="card" data-cat="milanesas" data-keywords="milanesa papas guarnición">
-        <img src="imagenes/milabesa1.jpg" alt="Milanesa con papas" loading="lazy">
-        <div class="card-body">
-          <h3>Milanesa con Papas</h3>
-          <p class="desc">Milanesa de ternera con guarnición.</p>
-          <div class="card-row">
-            <div class="price">desde $16000</div>
-            
-            <button class="btn order" onclick="location.href='milanesas.html'">Ir a milanesas</button>
+        </article>
+        <article class="card" data-cat="empanadas"
+          data-keywords="empanadas carne cebolla especias">
+          <img src="imagenes/empanadas.jpg" width="1%" alt="Empanadas"
+            loading="lazy">
+          <div class="card-body">
+            <h3>Empanadas de Carne</h3>
+            <p class="desc">Rellenas con carne, cebolla y especias.</p>
+            <div class="card-row">
+              <div class="price">desde $1500 c/u</div>
+              <button class="btn order"
+                onclick="location.href='empanadas.html'">Ir a empanadas</button>
+            </div>
           </div>
-        </div>
-      </article>
-
-      <article class="card" data-cat="pastas" data-keywords="pizza especial jamón morrón aceitunas huevo">
-        <img src="imagenes/pasta_putanesca.jpg" alt="Pastas especiales" loading="lazy">
-        <div class="card-body">
-          <h3>Pasta Especial</h3>
-          <p class="desc">tortolini, morrón, aceitunas y huevo.</p>
-          <div class="card-row">
-            <div class="price">desde $15000</div>
-            
-            <button class="btn order" onclick="location.href='pastas.html'">ir a pastas</button>
+        </article>
+        <article class="card" data-cat="tequenos"
+          data-keywords="tequeños palitos queso fritos">
+          <img src="imagenes/tequeno2.jpg" alt="Tequeños" loading="lazy">
+          <div class="card-body">
+            <h3>Tequeños</h3>
+            <p class="desc">Palitos de queso fritos, crujientes.</p>
+            <div class="card-row">
+              <div class="price">desde $4500</div>
+              <button class="btn order"
+                onclick="location.href='tequenos.html'">Ir a tequeños</button>
+            </div>
           </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- Registro de usuarios-->
-    <section id="registro" class="form-section">
-      <h2>Registro de Usuario</h2>
-      <form id="registerForm" class="form" autocomplete="on" novalidate>
-
-        <fildeset>
-          <legend>Información Personal</legend>
-          <label for="r-name">Nombre completo
-            <input id="r-name" name="name" type="text" required></label>
-          <br>
-          <label for="r-email">Correo electrónico
-            <input id="r-email" name="email" type="email" required></label>
-          <br>
-          <label for="r-phone">Teléfono
-            <input id="r-phone" name="phone" type="tel"></label>
-          <br>
-          <label for="r-password">Contraseña
-            <input id="r-password" name="password" type="password" minlength="6" required></label>
-          <br>
-          <div class="form-actions">
-            <button type="submit" class="btn">Crear cuenta</button>
-            <button type="button" class="btn alt" id="fillDemo">Ejemplo</button>
+        </article>
+        <article class="card" data-cat="milanesas"
+          data-keywords="milanesa papas guarnición">
+          <img src="imagenes/milabesa1.jpg" alt="Milanesa con papas"
+            loading="lazy">
+          <div class="card-body">
+            <h3>Milanesa con Papas</h3>
+            <p class="desc">Milanesa de ternera con guarnición.</p>
+            <div class="card-row">
+              <div class="price">desde $16000</div>
+              <button class="btn order"
+                onclick="location.href='milanesas.html'">Ir a milanesas</button>
+            </div>
           </div>
-          <div id="registerMsg" class="msg" aria-live="polite"></div>
+        </article>
+        <article class="card" data-cat="pastas"
+          data-keywords="pizza especial jamón morrón aceitunas huevo">
+          <img src="imagenes/pasta_putanesca (1).jpg" alt="Pastas especiales"
+            loading="lazy">
+          <div class="card-body">
+            <h3>Pasta Especial</h3>
+            <p class="desc">tortolini, morrón, aceitunas y huevo.</p>
+            <div class="card-row">
+              <div class="price">desde $15000</div>
+              <button class="btn order" onclick="location.href='pastas.html'">ir
+                a pastas</button>
+            </div>
+          </div>
+        </article>
+      </section>
 
-        </fildeset>
+      <!-- Registro de usuarios-->
+      <section id="registro" class="form-section">
+        <h2>Registro de Usuario</h2>
+        <form id="registerForm" class="form" autocomplete="on" novalidate>
+          <fildeset>
+            <legend>Información Personal</legend>
+            <label for="r-name">Nombre completo
+              <input id="r-name" name="name" type="text" required
+                pattern="[a-z]{4,8}"></label>
+            <br>
+            <label for="r-email">Correo electrónico
+              <input id="r-email" name="email" type="email" required></label>
+            <br>
+            <label for="r-phone">Teléfono
+              <input id="r-phone" name="phone" type="tel"></label>
+            <br>
+            <label for="r-password">Contraseña
+              <input id="r-password" name="password" type="password"
+                minlength="6" required></label>
+            <br>
+            <div class="form-actions">
+              <button type="submit" class="btn">Crear cuenta</button>
+              <button type="button" class="btn alt"
+                id="fillDemo">Ejemplo</button>
+            </div>
+            <div id="registerMsg" class="msg" aria-live="polite"></div>
+          </fildeset>
 
-      </form>
-    </section>
+        </form>
+      </section>
 
+      <section id="catering" class="form-section">
+        <h2>Servicio de Catering</h2>
+        <p>Ofrecemos servicio de catering para eventos especiales. Contactanos
+          para más información.</p>
+        <button class="btn" onclick="location.href='catering.html'">Ver opciones
+          de catering</button>
+      </section>
 
-    <section id="catering" class="form-section">
-      <h2>Servicio de Catering</h2>
-      <p>Ofrecemos servicio de catering para eventos especiales. Contactanos para más información.</p>
-        <button class="btn" onclick="location.href='catering.html'">Ver opciones de catering</button>
-    </section>
-
-    <!-- Pago -->
-    <section id="pago" class="form-section">
-      <h2>Pago en Línea</h2>
+      <!-- Pago -->
+      <section id="pago" class="form-section">
+        <h2>Pago en Línea</h2>
         <form id="paymentForm" class="form" novalidate>
-        
-        <fildeset>
-          <legend>formulario de Pago</legend>
-            
+          <fildeset>
+            <legend>formulario de Pago</legend>
             <label for="p-name">Nombre en la tarjeta
               <input id="p-name" type="text" required></label>
             <label for="p-card">Número de tarjeta
-              <input id="p-card" type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" required></label>
+              <input id="p-card" type="text" inputmode="numeric" maxlength="19"
+                placeholder="1234 5678 9012 3456"
+                required></label>
             <div class="row">
               <div class="col">
                 <label for="p-exp">Vencimiento
-                <input id="p-exp" type="month" required></label>
+                  <input id="p-exp" type="month" required></label>
               </div>
               <div class="col small">
-                  <label for="p-cvv">CVV
+                <label for="p-cvv">CVV
                   <input id="p-cvv" type="text" maxlength="4" required></label>
               </div>
             </div>
             <label for="p-amount">Importe
-            <input id="p-amount" type="text" readonly value="$0"></label>
+              <input id="p-amount" type="text" readonly value="$0"></label>
             <div class="form-actions">
               <button type="submit" class="btn">Pagar</button>
             </div>
             <div id="paymentMsg" class="msg" aria-live="polite"></div>
-            </fildeset>
-      </form>
-    </section>
+          </fildeset>
+        </form>
+      </section>
 
-  </main>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer_contenedor">
-      <ul class="social-links">
-        <li class="menu_elem"><a href="https://facebook.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
-              class="icon" src="iconos/facebook_128x128-32_22276 (2).ico" width="50px" alt></a></li>
-        <li class="menu_elem"><a href="https://tiktok.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
-              class="icon" src="iconos/tiktok_logo_icon_181737.ico" width="50px" alt="TikTok"></a></li>
-        <li class="menu_elem"><a href="https://instagram.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
-              class="icon" src="iconos/instagram_ig_logo_icon_181651.ico" width="50px" alt="Instagram"></a></li>
-        <li class="menu_elem"><a href="https://whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
-              class="icon" src="iconos/whatsapp_logo_icon_257020.ico" width="50px" alt="WhatsApp"></a></li>
-        <li class="menu_elem"><a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"><img class="icon"
-              src="iconos/Youtube_36365.ico" width="55px" alt="YouTube"></a></li>
-      </ul>
-    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_contenedor">
+        <ul class="social-links">
+          <li class="menu_elem"><a href="https://facebook.com/pavelpizzas"
+              target="_blank" rel="noopener noreferrer"><img
+                class="icon" src="iconos/facebook_128x128-32_22276 (2).ico"
+                width="50px" alt></a></li>
+          <li class="menu_elem"><a href="https://tiktok.com/pavelpizzas"
+              target="_blank" rel="noopener noreferrer"><img
+                class="icon" src="iconos/tiktok_logo_icon_181737.ico"
+                width="50px" alt="TikTok"></a></li>
+          <li class="menu_elem"><a href="https://instagram.com/pavelpizzas"
+              target="_blank" rel="noopener noreferrer"><img
+                class="icon" src="iconos/instagram_ig_logo_icon_181651.ico"
+                width="50px" alt="Instagram"></a></li>
+          <li class="menu_elem"><a href="https://whatsapp.com/" target="_blank"
+              rel="noopener noreferrer"><img
+                class="icon" src="iconos/whatsapp_logo_icon_257020.ico"
+                width="50px" alt="WhatsApp"></a></li>
+          <li class="menu_elem"><a href="https://youtube.com/" target="_blank"
+              rel="noopener noreferrer"><img class="icon"
+                src="iconos/Youtube_36365.ico" width="55px"
+                alt="YouTube"></a></li>
+        </ul>
+      </div>
 
-    <p class="texto_footer">&copy; 2026 Pavel Pizzas. Todos los derechos
-      reservados.</p>
+      <p class="texto_footer">&copy; 2026 Pavel Pizzas. Todos los derechos
+        reservados.</p>
 
-
-    <!-- Modal pedido -->
-    <div id="orderModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="modal-panel">
-        <h3 id="orderTitle">Tu pedido</h3>
-        <div id="orderBody" class="muted"></div>
-        <div class="modal-actions">
-          <button class="btn alt" id="closeModal">Cerrar</button>
-          <button class="btn" id="toPay">Ir a pagar</button>
+      <!-- Modal pedido -->
+      <div id="orderModal" class="modal" aria-hidden="true" role="dialog"
+        aria-modal="true">
+        <div class="modal-panel">
+          <h3 id="orderTitle">Tu pedido</h3>
+          <div id="orderBody" class="muted"></div>
+          <div class="modal-actions">
+            <button class="btn alt" id="closeModal">Cerrar</button>
+            <button class="btn" id="toPay">Ir a pagar</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script src="app.js"></script>
-</body>
+      <script src="app.js"></script>
+    </body>
 
-</html>
+  </html>

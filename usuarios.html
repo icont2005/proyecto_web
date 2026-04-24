@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USUARIOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/usuarios.html">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
+
 <body>
-    <header>   
+    <header>
         <h1 class="krub-bold" weight="700">USUARIOS</h1>
-    <</header>
+        << /header>
 </body>
+</section>
+
+<!-- Registro de usuarios-->
+<section id="registro" class="form-section">
+    <h2>Registro de Usuario</h2>
+    <form id="registerForm" class="form" autocomplete="on" novalidate>
+        <fildeset>
+            <legend>Información Personal</legend>
+            <label for="r-name">Nombre completo
+                <input id="r-name" name="name" type="text" required pattern="[a-z]{4,8}"></label>
+            <br>
+            <label for="r-email">Correo electrónico
+                <input id="r-email" name="email" type="email" required></label>
+            <br>
+            <label for="r-phone">Teléfono
+                <input id="r-phone" name="phone" type="tel"></label>
+            <br>
+            <label for="r-password">Contraseña
+                <input id="r-password" name="password" type="password" minlength="6" required></label>
+            <br>
+            <div class="form-actions">
+                <button type="submit" class="btn">Crear cuenta</button>
+                <button type="button" class="btn alt" id="fillDemo">Ejemplo</button>
+            </div>
+            <div id="registerMsg" class="msg" aria-live="polite"></div>
+        </fildeset>
+        <button class="btn order" onclick="location.href='index.html'">menu principal</button>
+
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="col-md-3 text-right top-2025-3" style="display: flex; align-items: center; justify-content: flex-end; gap: 10px; height: 100%;">
+        <a class="miunc-btn-top" href="https://mi.unc.edu.ar" target="_blank">
+          <img height="20px" src="/sites/all/themes/unc/images/2025/miunc-btn.svg" alt="MiUNC">
+        </a>
+        <form class="search-form form-search content-search" role="search" action="/" method="post" id="search-block-form" accept-charset="UTF-8" target="_self"><div><div>
+      <h2 class="element-invisible">Formulario de búsqueda</h2>
+    <div class="input-group"><input title="Escriba lo que quiere buscar." class="custom-search-box form-control form-text" placeholder="Buscar" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+</button></span></div><div class="form-item form-item-custom-search-types form-type-select form-group"> <label class="control-label" for="edit-custom-search-types">Buscar</label>
+<select class="custom-search-selector custom-search-types form-control form-select" id="edit-custom-search-types" name="custom_search_types"><optgroup label="Content"><option value="c-all" selected="selected">-Todos-</option><option value="c-ambiente">Ambiente</option><option value="c-autoridad">Autoridad</option><option value="c-convocatoria">Convocatoria</option><option value="c-convocatoria_externa">Convocatoria externa</option><option value="c-evento">Evento</option><option value="c-galer_a_de_medios">Galeria de Medios</option><option value="c-noticia">Noticia</option><option value="c-page">Página sencilla</option><option value="c-sub_ambiente">Sub ambiente</option><option value="c-webform">Webform</option></optgroup><option value="o-file_entity">Archivos</option></select></div><div class="form-actions form-wrapper form-group" id="edit-actions"><button class="element-invisible btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Buscar">Buscar</button>
+</div><input type="hidden" name="form_build_id" value="form-FZSjLh5BX1Wt0evJaZk9rVkTGzNH9Lmbb7xdYPjebuI">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>      </div>
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106933-1', 'auto');
+  ga('send', 'pageview');   
+
+
+
+</script>
+
+<script>
+
+  jQuery(document).ready(function ($) {
+
+    // Submenús desplegables
+    $('.dropdown-submenu a').on("click", function (e) {
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+
+    // Cierra el menú al hacer clic fuera del menú o del botón
+    $(document).on('click touchstart', function (e) {
+      var $target = $(e.target);
+      var $menu = $('#bs-navbar-2025');
+      var $toggle = $('.navbar-toggle');
+
+      if (
+        !$target.closest('#bs-navbar-2025').length &&
+        !$target.closest('.navbar-toggle').length &&
+        $menu.hasClass('in')
+      ) {
+        $menu.collapse('hide');
+      }
+    });
+
+    // Cierra el menú al hacer clic en cualquier enlace del menú
+    $('#bs-navbar-2025').on('click', 'a', function (e) {
+      var $link = $(this);
+      
+      // Si es un enlace real (no un toggle de submenu en móviles)
+      if (!$link.hasClass('dropdown-toggle')) {
+        $('#bs-navbar-2025').collapse('hide');
+      }
+    });
+
+  });
+
+
+
+
+</script>
+
+  j
+
+
+
+
+
+</body>
+</html>
