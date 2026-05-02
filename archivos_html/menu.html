@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style>
+  /* Estilos básicos del menú */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    background: #333;
+    display: inline-block;
+  }
+
+  nav li {
+    position: relative;
+    float: left;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+  }
+
+  nav a:hover {
+    background: #555;
+  }
+
+  /* Esconder submenú por defecto */
+  .submenu {
+    display: none;
+    position: absolute;
+    background: #fcf8f8;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+  }
+
+  /* Mostrar submenú al pasar el mouse */
+  nav li:hover .submenu {
+    display: block;
+  }
+
+  /* Estilo de los artículos del submenú */
+  .submenu li {
+    width: 100%;
+  }
+
+  .submenu a {
+    padding: 10px 20px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li>
+      <a href="#">Ver Catálogo ▼</a>
+      <!-- Submenú de 5 artículos -->
+      <ul class="submenu">
+        <li><a href="#">Artículo 1</a></li>
+        <li><a href="#">Artículo 2</a></li>
+        <li><a href="#">Artículo 3</a></li>
+        <li><a href="#">Artículo 4</a></li>
+        <li><a href="#">Artículo 5</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

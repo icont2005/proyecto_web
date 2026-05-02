@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empanadas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="/css/styles2.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <img src="/inconos/logonegocio2.jpg" alt="logo de Pavel Pizzas" class="logo" loading="lazy">
+        </div>
+        <div class="brand-text">
+          <div class="tag">
+            <h1>Pavel Pizzas <br><small>the restaurant</small> </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- navegacion principal -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul>
+          <li class="has-sub">
+            <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Menú ▾</button>
+            <ul class="sub-menu" role="menu">
+              <li><a href="pizzas.html" data-cat="pizzas">Pizzas</a></li>
+              <li><a href="hamburguesas.html" data-cat="hamburguesas">Hamburguesas</a></li>
+              <li><a href="empanadas.html" data-cat="empanadas">Empanadas</a></li>
+              <li><a href="tequenos.html" data-cat="tequenos">Tequeños</a></li>
+              <li><a href="milanesas.html" data-cat="milanesas">Milanesas</a></li>
+              <li><a href="pastas.html" data-cat="Pastas">Pastas</a></li>
+              <li><a href="catering.html" data-cat="Catering">Catering</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Ofertas ▾</button>
+            <ul class="sub-menu" role="menu">
+              <li><a href="#menu" data-filter="combo">Combos</a></li>
+              <li><a href="#menu" data-filter="promo">Promociones</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#registro">Registro</a></li>
+          <li><a href="#pago">Pago</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <input id="searchInput" class="search" type="search" placeholder="Buscar platos, ingredientes..."
+          aria-label="Buscar en el menú">
+        <button id="hamburger" class="hamburger" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2> Modulo Empanadas </h2>
+      </div>
+    </section>
+
+    <!-- Grilla de productos -->
+    <section id="menu" class="menu-grid" aria-labelledby="menu">
+      <!-- Cards con data-cat y data-keywords para buscador -->
+      <article class="card" data-cat="empanadas" data-keywords="Empanada de carne">
+        <img src="/imagenes/empanadas_carne.jpg" alt="Empanada de carne" loading="lazy">
+        <div class="card-body">
+          <h3>Empanada de Carne</h3>
+          <p class="desc">Empanada rellena de carne molida con especias.</p>
+          <div class="card-row">
+            <div class="price">$12000</div>
+             <button class="btn order" onclick="agregarCarrito('Empanada de Carne', 12000)">Agregar</button>
+             <a href="/index.html"><button class="btn order">Menu principal</button></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="empanadas" data-keywords="Empanada de pollo">
+        <img src="/imagenes/empanadas-de-pollo.jpg" alt="Empanada de pollo" loading="lazy">
+        <div class="card-body">
+          <h3>Empanada de Pollo</h3>
+          <p class="desc">Empanada rellena de pollo cocido con especias.</p>
+          <div class="card-row">
+            <div class="price">$10000</div>
+            <button class="btn order" onclick="agregarCarrito('Empanada de Pollo', 10000)">Agregar</button>
+             <a href="/index.html"><button class="btn order">Menu principal</button></a>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="empanadas" data-keywords="Empanada de jamon y queso">
+        <img src="/imagenes/Empanada-de-jamon-y-queso.jpg" alt="Empanada de jamon y queso" loading="lazy">
+        <div class="card-body">
+          <h3>Empanada de Jamón y Queso</h3>
+          <p class="desc">Empanada rellena de jamón y queso con especias.</p>
+          <div class="card-row">
+            <div class="price">$1500 c/u</div>
+            <button class="btn order" onclick="agregarCarrito('Empanada de Jamón y Queso', 1500)">Agregar</button>
+             <a href="/index.html"><button class="btn order">Menu principal</button></a>
+          </div>
+        </div>
+      </article>
+
+       <article class="card" data-cat="empanadas" data-keywords="emapnada de humita">
+        <img src="/imagenes/empanadas-de-humita.jpg" alt="Empanada de humita" loading="lazy">
+        <div class="card-body">
+          <h3>Empanada de Humita</h3>
+          <p class="desc">Empanada rellena de humita con especias.</p>
+          <div class="card-row">
+            <div class="price">$1500 c/u</div>
+            <button class="btn order" onclick="agregarCarrito('Empanada de Humita', 1500)">Agregar</button>
+             <a href="/index.html"><button class="btn order">Menu principal</button></a>
+            </div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="empanadas" data-keywords="empanada venezolanas">
+        <img src="/imagenes/empanadas_venezolanas.jpg" alt="Empanada venezolana" loading="lazy">
+        <div class="card-body">
+          <h3>Empanada Venezolana</h3>
+          <p class="desc">Empanada rellena de: carne, pollo, pescado </p>
+            <div class="card-row">
+            <div class="price">$12000</div>
+            <button class="btn order" onclick="agregarCarrito('Empanada Venezolana', 12000)">Agregar</button>
+             <a href="/index.html"><button class="btn order">Menu principal</button></a>
+            </div>
+        </div>
+      </article>
+      <article class="card" data-cat="gaseosas" data-keywords="gaseosa refresco">
+        <img src="/imagenes/gaseosa.jpg" alt="Gaseosa" loading="lazy">
+        <div class="card-body">
+          <h3>Gaseosa</h3>
+          <p class="desc">Refresco de cola, limonada o naranja.</p>
+          <div class="card-row">
+            <div class="price">$4500</div>
+            <button class="btn order" onclick="agregarCarrito('Gaseosa', 4500)">Agregar</button>
+             <a href="/index.html"><button class="btn order">Menu principal</button></a>
+            </div>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- Pago -->
+
+
+<section id="pago" class="form-section"></section>
+      <div class="pago-container">
+            <h2>Formulario de Pago</h2>
+            <form form id="paymentForm" class="form" novalidate>
+              <div class="opcion">
+                <label for="metodo">Método de pago:</label>
+                <select id="metodo" name="metodo" onchange="mostrarCampos()">
+                  <option value="">Seleccione...</option>
+                  <option value="tarjeta">Tarjeta de Crédito</option>
+                  <option value="transferencia">Transferencia Bancaria</option>
+                  <option value="mercadopago">Mercado Pago</option>
+                </select>
+              </div>
+
+              <div id="tarjeta" style="display:none;">
+                <label>Número de tarjeta:</label>
+                <input type="text" name="numero_tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX">
+                <label>Fecha de vencimiento:</label>
+                <input type="text" name="vencimiento" placeholder="MM/AA">
+                <label>Código de seguridad (CVV):</label>
+                <input type="text" name="cvv" placeholder="123">
+              </div>
+
+              <div id="transferencia" style="display:none;">
+                <p>Realice la transferencia al siguiente CBU:</p>
+                <strong>1234567890123456789012</strong>
+              </div>
+
+              <div id="mercadopago" style="display:none;">
+                <p>Será redirigido a Mercado Pago para completar la transacción.</p>
+                <button type="button" onclick="window.location.href='https://www.mercadopago.com.ar'">Pagar con Mercado Pago</button>
+              </div>
+
+              <button type="submit">Confirmar Pago</button>
+            </form>
+          </div> 
+
+    <!-- Carrito -->
+    <section id="carrito">
+        <h2>🛒 Carrito de Compras</h2>
+        <ul id="listaCarrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </section>
+    <section id="pago">
+        <h2>Opciones de Pago</h2>
+        <button class="btn" onclick="pagar('Tarjeta de Crédito')">
+            Pagar con Tarjeta
+        </button>
+        <button class="btn" onclick="pagar('Transferencia Bancaria')">
+            Pagar con Transferencia
+        </button>
+        <button class="btn" onclick="pagarMercadoPago()">
+            Pagar con Mercado Pago
+        </button>
+    </section>
+
+
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer_contenedor">
+      <ul class="social-links">
+        <li class="menu_elem"><a href="https://facebook.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="/iconos/facebook_128x128-32_22276 (2).ico" width="50px" alt></a></li>
+        <li class="menu_elem"><a href="https://tiktok.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="/iconos/tiktok_logo_icon_181737.ico" width="50px" alt="TikTok"></a></li>
+        <li class="menu_elem"><a href="https://instagram.com/pavelpizzas" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="/iconos/instagram_ig_logo_icon_181651.ico" width="50px" alt="Instagram"></a></li>
+        <li class="menu_elem"><a href="https://whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="/iconos/whatsapp_logo_icon_257020.ico" width="50px" alt="WhatsApp"></a></li>
+        <li class="menu_elem"><a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"><img class="icon"
+              src="/iconos/Youtube_36365.ico" width="55px" alt="YouTube"></a></li>
+      </ul>
+    </div>
+
+    <p class="texto_footer">&copy; 2026 Pavel Pizzas. Todos los derechos
+      reservados.</p>
+    </footer>
+
+
+<!--
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+        let carrito = [];
+        let total = 0;
+
+        function agregarCarrito(producto, precio) {
+            carrito.push({ producto, precio });
+            total += precio;
+            mostrarCarrito();
+        }
+
+        function mostrarCarrito() {
+            const lista = document.getElementById("listaCarrito");
+            lista.innerHTML = "";
+            carrito.forEach((item) => {
+                const li = document.createElement("li");
+                li.textContent = `${item.producto} - $${item.precio}`;
+                lista.appendChild(li);
+            });
+            document.getElementById("total").textContent = total;
+        }
+
+        function pagar(metodo) {
+            alert(`Has elegido pagar con ${metodo}. Total a pagar: $${total}`);
+        }
+
+        function pagarMercadoPago() {
+            const mp = new MercadoPago("TU_PUBLIC_KEY", { locale: "es-AR" });
+            const preference = { id: "123456789" }; // Este ID lo genera tu backend
+            mp.checkout({
+                preference: { id: preference.id },
+                autoOpen: true,
+            });
+        }
+
+        function registrarUsuario(event) {
+            event.preventDefault();
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            alert(`Usuario registrado: ${nombre} (${email})`);
+        }
+    </script>
+
+
+
+-->    
+</body>
+
+</html>
